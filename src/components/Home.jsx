@@ -25,7 +25,7 @@ const Home = () => {
         <TypeAnimation sequence={["Khine Zin Myint",2000," Khine Zin Myint",2000]} speed={50} className='text-accent' wrapper='span' repeat={Infinity} />
        </motion.div>     
        <motion.div variants={fadeIn("up",0.3)} initial="hidden" whileInView={"show"} viewport={{once:false ,amount:0.7}}>
-       <span className='text-white font-secondary text-xl '>I am junior web developer specialized in MERN Stack Development. </span>
+       <span className='text-white font-secondary text-xl '>I am junior developer specialized in Web Development. </span>
       <br></br>
      <div className='flex my-5  items-center'>
       

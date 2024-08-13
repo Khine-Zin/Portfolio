@@ -69,23 +69,35 @@ const Skill = () => {
       
         </div>
        <div className=''>
-       <p className='text-white text-center text-xl mb-3'>BACKENED SKILLS</p>
+       <p className='text-white text-center text-xl mb-8'>BACKENED SKILLS</p>
         <div className='flex lg:gap-x-10 gap-x-5'>
        
-       <div className=''>
-        <ProgressBar width="230" trackWidth="13" percentage="70"  fontColor="gray" />
-        <p className='text-white text-center'>MONGO BD</p>
-       </div>
-       <div className=''>
+        <div>
+        <div className=''>
         <ProgressBar width="230" trackWidth="13" percentage="60"  fontColor="gray" />
         <p className='text-white text-center'>NODE JS</p>
        </div>
        <div className=''>
-        <ProgressBar width="230" trackWidth="13" percentage="40"  fontColor="gray" />
-        <p className='text-white text-center'>EXPRESS JS</p>
+        <ProgressBar width="230" trackWidth="13" percentage="50"  fontColor="gray" />
+        <p className='text-white text-center'>PHP</p>
        </div>
+       <div className=''>
+        <ProgressBar width="230" trackWidth="13" percentage="60"  fontColor="gray" />
+        <p className='text-white text-center'>LARAVEL</p>
+       </div> 
         </div>
+        <div>
+       <div className=''>
+        <ProgressBar width="230" trackWidth="13" percentage="40"  fontColor="gray" />
+        <p className='text-white text-center'>MYSQL</p>
        </div>
+       <div className=''>
+        <ProgressBar width="230" trackWidth="13" percentage="70"  fontColor="gray" />
+        <p className='text-white text-center'>MONGO BD</p>
+       </div>
+       </div>
+       </div>
+    </div>
        
           </div>
         </div>
