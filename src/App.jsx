@@ -1,27 +1,47 @@
-import React from 'react';
+import { useEffect, useState } from "react";
+import "./App.css";
+import Header from "./components/header/Header";
+import Home from "./components/home/Home";
+import About from "./components/about/About";
+import Skills from "./components/skills/Skills";
+import Project from "./components/project/Project";
+import Education from "./components/education/Education";
+import Contact from "./components/contact/Contact";
+import Footer from "./components/footer/Footer";
+function App() {
+  const [mode, setMode] = useState("light");
+  useEffect(() => {
+    if (mode === "dark") {
+      document.documentElement.classList.remove("dark");
+    } else {
+      document.documentElement.classList.add("dark");
+    }
+  }, [mode]);
+  const handleMode = () => {
+    if (mode === "dark") {
+      setMode("light");
+    } else {
+      setMode("dark");
+    }
+  };
 
-import Nav from "./components/Nav";
-import Home from './components/Home';
-import About from './components/About';
-import Header from './components/Header';
-import Skill from './components/Skill';
-import Project from './components/Project';
-import Footer from './components/footer';
-
-const App = () => {
   return (
-    <div className="bg-primary scroll-smooth ">
-      <Nav />
-      <Header/>
-      <Home/>
-      <About/>
-      <Skill/>
-      <Project/>
+    <div className="dark:bg-black dark:text-white duration-500 transition-all prevent-select overflow-hidden">
+      <Header handleMode={handleMode} mode={mode} />
+      <div className="">
+        <Home />
+      </div>
+      <div>
+        <About />
+      </div>
+      <Education />
+      <Skills mode={mode} />
+      <Project mode={mode} />
+      <Contact />
       <Footer/>
-  <div className='h-[200px]'></div>
+      <div className="mb-[50px] md:mb-0"></div>
     </div>
-   
-  )
+  );
 }
 
-export default App
+export default App;

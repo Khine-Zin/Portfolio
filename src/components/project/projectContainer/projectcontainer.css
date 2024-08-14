@@ -1,0 +1,17 @@
+.projectDark{
+    filter: drop-shadow(0px 0px 10px #5545a3);
+    transition: all;
+    transition-duration: 0.3s;
+}
+.projectDark:hover{
+    filter: drop-shadow(0px 0px 10px #806edd);
+}
+
+.projectLight{
+    filter: drop-shadow(0px 0px 10px #070123);
+    transition: all;
+    transition-duration: 0.3s;
+}
+.projectLight:hover{
+    filter: drop-shadow(0px 0px 30px #050117);
+}
