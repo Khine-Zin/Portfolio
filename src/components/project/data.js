@@ -1,9 +1,9 @@
 import Estate from "../../images/project1.jpg";
 import Course from "../../images/project2.png";
-import Portfolio from "../../images/project3.png";
+import Portfolio from "../../images/portfolio.png";
 import Next from "../../images/project4.png";
 import Api from "../../images/project5.webp";
-import Ecommerce from "../../images/project6.jpg";
+import Ecommerce from "../../images/ecommerce.png";
 
 export const projectData = [
   {

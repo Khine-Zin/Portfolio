@@ -18,16 +18,16 @@ export default function Home() {
     >
       <div className="md:w-[75%] w-full  px-5 md:px-0 md:flex-row  gap-y-14 flex-col-reverse flex items-center md:justify-between">
         {/* Hero section text */}
-        <div className="text-sec md:text-[64px] w-full flex flex-col items-center md:items-start md:w-[60%] text-[24px] font-bold ">
+        <div className="text-sec md:text-[64px] w-full flex flex-col items-center md:items-start md:w-[60%] text-[10px] font-bold ">
           <div className="flex md:flex-col gap-x-3 flex-row">
-            <h1 className=" transition-all duration-200 dark:text-white">
+            <h5 className="duration-200 dark:text-white">
               Hi,I am
-            </h1>
-            <h2 className=" transition-all duration-200 dark:text-white">
+            </h5>
+            <h4 className=" transition-all duration-200 dark:text-white">
                <span className="text-[#4070f4]">Khine Zin Myint</span>
-            </h2>
+            </h4>
           </div>
-          <h1 className=" transition-all duration-200 dark:text-white">
+          <h3 className=" transition-all duration-200 dark:text-white">
             <Typewriter
               words={["Web Developer.", "CS Student."]}
               cursor
@@ -38,7 +38,7 @@ export default function Home() {
               delaySpeed={1000}
              
             />
-          </h1>
+          </h3>
           <a target="_blankx" href={Cv}>
           <button className="hover:bg-[#2d4481] group bg-[#4070f4] flex items-center gap-3 mt-8 transition-all duration-200 text-white text-xl font-bold px-4 py-2 rounded-md">
             Download CV <FaDownload className="group-hover:animate-bounce" />
