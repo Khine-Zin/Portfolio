@@ -7,7 +7,7 @@ import { FaDownload } from "react-icons/fa6";
 import { FaArrowDown } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa";
 import Profile from "../../images/Homeprofile.jpg";
-import Cv from '../../images/KhineZinMyintcv.pdf'
+import Cv from '../../images/KhineZinMyintResume.pdf'
 export default function Home() {
   
 
